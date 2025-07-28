@@ -108,21 +108,6 @@ Predict the price of a house based on various features such as:
 
 
 
----
-
-
-
-🚀 How to Run
-
-
-
-1\. Clone this repository:
-
-&nbsp;  ```bash
-
-&nbsp;  git clone https://github.com/yourusername/house-price-prediction.git
-
-&nbsp;  cd house-price-prediction
 
 
 
