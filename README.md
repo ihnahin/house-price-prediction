@@ -1,113 +1,54 @@
-&nbsp;🏠 House Price Prediction using Linear Regression
+# 🏠 House Price Prediction using Linear Regression
 
-
-
-This project uses a simple machine learning model (Linear Regression) to predict house prices based on features like number of rooms, square footage, renovation history, and more.
-
-
+This project predicts house prices using a simple machine learning model (Linear Regression) based on square footage and other features.
 
 ---
 
+## 📌 Project Description
 
-
-🔍 Problem Statement
-
-
-
-Predict the price of a house based on various features such as:
-
-\- Square footage (`sqft\_living`, `sqft\_lot`)
-
-\- Number of bedrooms and bathrooms
-
-\- Number of floors
-
-\- Waterfront view or not
-
-\- Year built / renovated
-
-\- Basement area, above-ground area
-
-\- Neighborhood/location features (city, zip, etc.)
-
-
+In this project, we aim to predict the price of a house based on its square footage using Linear Regression. This is a basic regression task suitable for beginners in Data Science and Machine Learning.
 
 ---
 
+## 🧠 Technologies Used
 
-
-📦 Dataset
-
-
-
-\- \*\*Source\*\*: Kaggle  
-
-&nbsp; https://www.kaggle.com/datasets/shree1992/housedata  
-
-\- \*\*Size\*\*: ~4,600 rows × 18 columns  
-
-\- \*\*Format\*\*: CSV  
-
-\- \*\*Target Column\*\*: `price` (selling price of the house)
-
-
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-learn
+- Jupyter Notebook / Google Colab
 
 ---
 
+## 📊 Dataset
 
+The dataset is taken from Kaggle:  
+🔗 [Housing Dataset on Kaggle](https://www.kaggle.com/datasets/shree1992/housedata)
 
-&nbsp;🛠️ Technologies Used
+File used: `housing.csv`
 
-
-
-\- 🐍 Python  
-
-\- 🧮 Pandas, NumPy  
-
-\- 📊 Matplotlib, Seaborn  
-
-\- 🤖 Scikit-learn  
-
-\- 📓 Jupyter Notebook
-
-
+Features used:
+- `sqft_living` (square feet of living area)
+- `price` (target variable)
 
 ---
 
+## 🛠️ Steps Performed
 
-
-📊 Models Used
-
-
-
-\- ✅ Linear Regression (baseline)
-
-\- 🌲 Random Forest Regressor (for better accuracy)
-
-
+1. Loaded and cleaned the dataset
+2. Performed basic EDA (Exploratory Data Analysis)
+3. Trained a Linear Regression model
+4. Evaluated performance using Mean Absolute Error and R² Score
+5. Visualized prediction results using matplotlib
+6. Predicted the price of a user-defined house
 
 ---
 
+## 📈 Sample Output
 
-
-&nbsp;📁 Files Included
-
-
-
-| File | Description |
-
-|------|-------------|
-
-| `data.csv` | Raw housing dataset |
-
-| `house\_price\_prediction.ipynb` | Main notebook with code \& visualizations |
-
-| `README.md` | This project description |
-
-| `requirements.txt` | Python dependencies (optional) |
-
-
-
-
-
-
+```text
+Mean Absolute Error: 125345.78
+R² Score: 0.49
+Predicted price for 2000 sqft house: $460,789.22
